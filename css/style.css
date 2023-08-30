@@ -146,8 +146,12 @@ ul {
     max-width: 100%;
     margin: auto;
 }
-.navBar ul li {
-    font-size: 10px;
+.navBar ul li a{
+    font-size: 5px;
+    max-width: 100px;
+}
+.navBar ul{
+    font-size: 5px;
 }
 }
 .navBar .logo {
@@ -183,6 +187,7 @@ ul {
     border: none;
     background-color: var(--blueColor);
     padding: 15px;
+
 }
 .navBar button a{
     text-decoration: none;
@@ -292,4 +297,223 @@ ul {
     color: var(--whiteColor);
     text-transform: capitalize;
     margin-top: 15px;
+}
+#about{
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.ltr-ab{
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    flex-basis: 40%;
+    padding-bottom: 50px;
+    background-color: #eee;
+    
+}
+.ltr-ab .info{
+    max-width: 300px;
+    margin-top: 150px;
+    margin-left: 320px;
+}
+@media (max-width: 767px){
+    .ltr-ab .info ,.rtl-ab{
+        display: grid;
+        margin: 0;
+    }
+
+}
+@media (max-width: 991px) {
+    .ltr-ab {
+        flex-basis: 100%;
+    }
+}
+.ltr-ab img{
+    width: 300px;
+    padding-bottom: 20px;
+}
+.ltr-ab h2{
+    margin:5px 0 5px 0;
+}
+.ltr-ab p{
+    margin-bottom: 15px;
+
+    color: #777;
+    line-height: 1.7;
+}
+.ltr-ab h3{
+    width: fit-content;
+    border-bottom: 2px solid;
+    font-weight: normal;
+    font-size: 17px;
+    text-transform: capitalize;
+}
+/*rrrr*/
+.rtl-ab {
+    align-items: center;
+    justify-content: center;
+    flex-basis: 60%;
+    padding-bottom: 50px;
+}
+.rtl-ab .info {
+    margin-top: 150px;
+    margin-left: 70px;
+    max-width: 400px;
+}
+.rtl-ab h4{
+    font-weight: normal;
+    font-size: 13px;
+}
+.rtl-ab h2{
+    margin: 10px 0 10px 0;
+    font-size: 30px;
+}
+.rtl-ab .square ,
+.ltr-why .why-name .square ,
+.ltr-pro .square ,
+.cust-our .square ,
+.ltr-work .square ,
+.rtl-work .square {
+    position: absolute;
+    margin: 3px -12px;
+    width: 8px;
+    height: 8px;
+    background-color: var(--greenColor);
+}
+.bussni div{
+    margin-bottom: 10px;
+}
+.bussni input{
+    accent-color: var(--blueColor);
+    
+}
+.ex-win{
+    display: flex;
+}
+.ex ,.win{
+    width: 240px;
+    display: flex;
+    margin-right: 10px;
+    padding: 15px;
+    border-radius: 3px;
+    border: 2px solid rgb(214, 212, 207);
+}
+.ex img , .win img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.ex-win .ex h2 , 
+.ex-win .win h2 {
+    font-size: 16px;
+}
+.ex-win .ex p , .ex-win .win p{
+    font-size: 15px;
+    color: rgb(134, 131, 125);
+}
+.rtl-ab button{
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: var(--blueColor);
+    padding: 15px;
+}
+.rtl-ab button a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--whiteColor);
+}
+#company{
+    width: 100%;
+    height: 20vh;
+}
+.logo-com{
+    margin-top: 70px;
+    margin-bottom: 100px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+.logo-com img{
+    width: 130px;
+    height: 50px;
+}
+.exp-name {
+    margin-bottom: 70px;
+}
+.exp-name h4,
+.team-name h4{
+    font-size: 13px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.exp-name h2 ,
+.team-name h2{
+    text-align: center;
+    font-weight: bold;
+}
+.info .container .buss-sol {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+    margin-bottom: 30px;
+}
+.info .container .buss-sol .one-buss{
+    background-color: #F4F4F4;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px 0 rgb(0 0 0 / 12%);
+    width: 350px;
+    height: 173px;
+    position: relative;
+    padding: 30px;
+}
+.info .container .buss-sol .one-buss div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.one-buss{
+    width: fit-content;
+    padding: 15px 30px;
+    background-color: #eee;
+}
+.one-buss div{
+    display: flex;
+}
+.one-buss div h3{
+    font-weight: normal;
+    font-size: 16px;
+    margin:0 50px 20px 0;
+}
+.one-buss div img{
+    width: 60px;
+    height: 60px;
+}
+.one-buss a{
+    color: var(--blueColor);
+    font-size: 12px;
+    text-decoration: none;
+    display: flex;
+    font-size: 15px;
+    padding-top: 20px;
+}
+.more{
+    width: 350px;
+    height: 173px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blueColor);
+}
+.more a{
+    text-decoration: none;
+    color: var(--whiteColor);
+    font-size: x-large;
+    font-weight: bold;
 }
