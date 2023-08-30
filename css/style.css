@@ -139,12 +139,14 @@ ul {
 @media (max-width: 767px){
 .navBar .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill , minmax(300px ,1fr));
-    gap: 10px;
+    /* grid-template-columns: repeat(auto-fill , minmax(300px ,1fr));
+   */ gap: 5px; 
+    align-items: center;
+    justify-content: center;
     max-width: 100%;
     margin: auto;
 }
-.navBar ul li a{
+.navBar ul li {
     font-size: 10px;
 }
 }
