@@ -315,9 +315,9 @@ ul {
     
 }
 .ltr-ab .info{
-    max-width: 300px;
+    max-width: 280px;
     margin-top: 150px;
-    margin-left: 320px;
+    margin-left: 250px;
 }
 @media (max-width: 767px){
     .ltr-ab .info ,.rtl-ab{
@@ -353,8 +353,6 @@ ul {
 }
 /*rrrr*/
 .rtl-ab {
-    align-items: center;
-    justify-content: center;
     flex-basis: 60%;
     padding-bottom: 50px;
 }
