@@ -1,0 +1,220 @@
+
+/** Start footer */
+footer{
+    background-color: var(--b-color);
+    color: var(--w-color);
+}
+
+.logofooter {
+    width: 170px;
+    height: 30px;
+}
+
+.contact_footer_call {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: 1.2rem;
+}
+
+.contact_footer_call .icon_call{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: rgba(76, 77, 82, 1);
+    color: var(--first-color);
+}
+
+.titleContFooterAddress h6 {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.titleContFooterAddress p {
+    font-weight: 200;
+    font-size: .9rem;
+}
+
+.titleHeadFooter {
+    display: flex;
+    align-items: center;
+    gap:.2rem;
+}
+
+.titleHeadFooter .descTitleFooter{
+    color: var(--first-color);
+    font-weight: 700;
+}
+
+.divLinkFooter a:hover {
+    color: var(--first-color);
+}
+
+.email_footer {
+    background-color: rgba(71, 73, 80, 1);
+    color: var(--w-color);
+    padding: 2rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.email_footer h6 {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.email_footer p {
+    font-weight: 300;
+}
+
+.inputEmailFooter {
+    display: flex;
+}
+
+.inputEmailFooter input {
+    padding: 1rem 1.5rem;
+    width: 90%;
+}
+
+.contect_call_top {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 1rem;
+    align-items: center;
+}
+
+.contect_call_bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    gap: 2rem;
+}
+
+footer hr {
+    border-top: 1px solid var(--w-color);
+    margin: 2rem 0;
+}
+
+.copyFooter {
+    font-size: .8rem;
+}
+
+.copyFooter span:nth-child(1) {
+    color: var(--first-color);
+}
+
+.copyFooter span:nth-child(2) {
+    color: var(--second-color);
+}
+
+@media (992px < width <= 1200px) {
+    .contect_call_top {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .contect_call_bottom {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .contect_call_bottom .email_footer {
+        grid-row:2 / 3;
+        grid-column: 1 /3;
+    }
+}
+
+@media (768px < width <= 992px) {
+    .contect_call_top .imgGrid{
+        grid-column:1/2 ;
+    }
+
+    .contect_call_top .contact_footer_call {
+        grid-row:2 /3 ;
+    }
+
+    .contect_call_bottom .divLinkFooter:nth-child(1){
+        grid-row:1 / 2 ;
+        grid-column:1 / 3 ;
+    }
+
+    .contect_call_bottom .divLinkFooter:nth-child(2) {
+        grid-row:1 / 2 ;
+        grid-column:3 / 5;
+    }
+    
+    .contect_call_bottom .divLinkFooter:nth-child(3) {
+        grid-row: 2 / 3;
+        grid-column:1 / 3 ;
+    }
+    
+    .contect_call_bottom .email_footer {
+        grid-row: 2 / 3;
+        grid-column: 3 / 5 ;
+    }
+}
+
+@media (0px < width <= 768px) {
+    .contect_call_top .imgGrid {
+        grid-column: 1/2;
+    }
+
+    .contect_call_top .contact_footer_call:nth-child(2) {
+        grid-column: 1/2;
+        grid-row:2/3 ;
+    }
+
+    .contect_call_top .contact_footer_call:nth-child(3) {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .contect_call_top .contact_footer_call:nth-child(4) {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    .contect_call_bottom .divLinkFooter:nth-child(1) {
+        grid-row: 1 / 2;
+        grid-column: 1 / 3;
+    }
+
+    .contect_call_bottom .divLinkFooter:nth-child(2) {
+        grid-row: 2 / 3;
+        grid-column: 1 / 3;
+    }
+
+    .contect_call_bottom .divLinkFooter:nth-child(3) {
+        grid-row: 3 / 4;
+        grid-column: 1 / 3;
+    }
+
+    .contect_call_bottom .email_footer {
+        grid-row: 4 / 5;
+        grid-column: 1 / 5;
+    }
+}
+
+@media (0 < width <= 992px) {
+    .divCopy {
+        flex-wrap: wrap;
+    }
+}
+
+@media (0 < width <= 450px) {
+    .email_footer .inputEmailFooter {
+        flex-wrap: wrap;
+    }
+
+    .email_footer .inputEmailFooter button,
+    .email_footer .inputEmailFooter input {
+        flex-grow: 1;
+    }
+}
+/* @media (0 < width <= 576px) {
+
+} */
+/** End footer */
